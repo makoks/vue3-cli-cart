@@ -45,8 +45,8 @@ export default {
     };
   },
   methods: {
-    addToCart(product) {
-      if (product.quantity === 0) {
+    addToCart(product, quantity) {
+      if (quantity === 0) {
         return;
       }
       if (!this.cart[product.name]) {
@@ -54,12 +54,11 @@ export default {
           name: product.name,
           price: product.price.USD,
           icon: product.icon,
-          quantity: product.quantity,
+          quantity,
         };
       } else {
-        this.cart[product.name].quantity += product.quantity;
+        this.cart[product.name].quantity += quantity;
       }
-      product.quantity = 0;
     },
     toggleShowCart() {
       this.showCart = !this.showCart;
