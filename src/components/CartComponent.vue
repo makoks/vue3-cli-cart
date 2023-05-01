@@ -27,9 +27,9 @@
                 <i :class="['icofont-' + product.icon, 'icofont-3x']"></i>
               </td>
               <td>{{ product.name }}</td>
-              <td>\${{ product.price }}</td>
+              <td>${{ product.price }}</td>
               <td class="center">{{ product.quantity }}</td>
-              <td>\${{ (product.price * product.quantity).toFixed(2) }}</td>
+              <td>${{ (product.price * product.quantity).toFixed(2) }}</td>
               <td class="center">
                 <button
                   class="btn btn-light cart-remove"
@@ -46,7 +46,7 @@
           <em>No items in cart</em>
         </p>
         <div class="spread">
-          <span><strong>Total:</strong> $\{{ cartTotal }}</span>
+          <span><strong>Total:</strong> ${{ cartTotal }}</span>
           <button class="btn btn-light">Checkout</button>
         </div>
       </div>

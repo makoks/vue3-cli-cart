@@ -18,7 +18,7 @@
     </a>
   </header>
   <main>
-    <router-view :inventory="inventory" />
+    <router-view :inventory="inventory" :add-to-cart="addToCart" />
   </main>
   <footer></footer>
   <CartComponent

@@ -61,6 +61,6 @@
 export default {
   name: "HomeView",
   components: {},
-  props: ["inventory"],
+  props: ["inventory", "addToCart"],
 };
 </script>
