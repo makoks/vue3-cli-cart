@@ -58,17 +58,9 @@
 
 <script>
 // @ is an alias to /src
-import food from "../food.json";
-
 export default {
   name: "HomeView",
   components: {},
-  data() {
-    return {
-      inventory: food.map((product) => ({ ...product, quantity: 0 })),
-      // cart: {},
-      // showCart: false,
-    };
-  },
+  props: ["inventory"],
 };
 </script>
