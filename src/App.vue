@@ -17,5 +17,8 @@
       <span>Cart ({{ cartItemsCount }})</span>
     </a> -->
   </header>
-  <router-view />
+  <main>
+    <router-view />
+  </main>
+  <footer></footer>
 </template>
